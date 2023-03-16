@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <h3 id="opçao-relogio" onclick="seletorRel()">Relógio</h3>
+        <h3 id="opçao-cronometro" onclick="seletorCron()">Cronometro</h3>
+        <div id="seletor"> </div>
+    </header>
+
+    <div id="container-relogio">
+        
+    <div> 
+        <h2 id="horas-rel">00</h2>
+        <p>Horas:</p> 
+    </div>
+        
+    <div>
+        <h2 id="minutos-rel">00</h2>
+        <p>Minutos:</p>
+    </div>
+        
+    <div>
+        <h2 id="segundos-rel">00</h2>
+        <p>Segundos:</p>
+    </div>
+        
+
+    </div>
+
+    <span id="line1"> </span>
+    <span id="line2"> </span>
+
+    
+    <div id="container-cronometro">
+        
+        <div> 
+            <h2 id="horas-cron">00</h2>
+            <p>Horas:</p> 
+        </div>
+                
+        <div>
+            <h2 id="minutos-cron">00</h2>
+            <p>Minutos:</p>
+        </div>
+                
+        <div>
+            <h2 id="segundos-cron">00</h2>
+            <p>Segundos:</p>
+        </div>
+    </div>
+
+    <div id="container-botoes">
+        <button onclick="start()" style="background-color: #00ff00;" id="iniciar">Iniciar</button>
+        <button onclick="pausar()" style="background-color: #e5ff00" id="pausar">Pausar</button>
+        <button onclick="zerar()" style="background-color: #ff0000" id="zerar">Zerar</button>
+    </div>
+
+</body>
+<script src="JS/relogio.js"></script>
+<script src="JS/seletor.js"></script>
+<script src="JS/cronometro.js"></script>
+</html>
